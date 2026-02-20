@@ -6,30 +6,30 @@ namespace COMP003A.Assignment6
 {
     internal class BookTracker
     {
-        public string Name;
+        public string Book;
 
-        public int File;
+        public int Page;
 
         public bool Available;
 
 
 
-        private BookTracker(string name, int file, bool available)
+        private BookTracker(string book, int page, bool available)
         {
-            Name = name;
+            BookItem = book;
 
-            File = file;
+            Page = page;
 
             Available = available;
         }
 
         public void DisplayMessage()
         {
-            Console.WriteLine("Book: " + Name);
+            Console.WriteLine($"Title:{Book}");
 
-            Console.WriteLine("Available: " + File);
+            Console.WriteLine($"Available:{Page} ");
 
-            Console.WriteLine("Avaliable: " + Available);
+            Console.WriteLine($"Avaliable:{Available}");
         }
     }
 }
