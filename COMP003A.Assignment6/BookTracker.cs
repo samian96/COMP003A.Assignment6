@@ -10,17 +10,26 @@ namespace COMP003A.Assignment6
 
         public int File;
 
-        public bool Complete;
+        public bool Available;
 
 
 
-        private BookTracker(string name, int file, bool complete)
+        private BookTracker(string name, int file, bool available)
         {
             Name = name;
 
             File = file;
 
-            Complete =complete
+            Available = available;
+        }
+
+        public void DisplayMessage()
+        {
+            Console.WriteLine("Book: " + Name);
+
+            Console.WriteLine("Available: " + File);
+
+            Console.WriteLine("Avaliable: " + Available);
         }
     }
 }
