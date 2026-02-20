@@ -6,15 +6,21 @@ namespace COMP003A.Assignment6
 {
     internal class BookTracker
     {
-        string Name;
+        public string Name;
 
-        int File;
+        public int File;
 
-        private BookTracker(string name, int file)
+        public bool Complete;
+
+
+
+        private BookTracker(string name, int file, bool complete)
         {
             Name = name;
 
             File = file;
+
+            Complete =complete
         }
     }
 }

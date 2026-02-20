@@ -8,6 +8,8 @@
 
             Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
 
+            string user = Console.ReadLine();
+
 
         }
     }
