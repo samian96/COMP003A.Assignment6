@@ -16,7 +16,7 @@ namespace COMP003A.Assignment6
 
         private BookTracker(string book, int page, bool available)
         {
-            BookItem = book;
+            Book = book;
 
             Page = page;
 
