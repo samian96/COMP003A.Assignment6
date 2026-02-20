@@ -5,15 +5,21 @@
         static void Main(string[] args)
         {
 
-            bookitem book1 = new bookitem("The Call of Cthulu", 39, false, "");
+            Book book1 = new Book("The Call of Cthulu", 39, false, "");
 
-            Console.WriteLine("Library Menu.\n");
+            bool running = true;
 
-            Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
+            while (running)
+            {
+                Console.WriteLine("Library Menu.\n");
 
-            BookItem.DisplayMessage()
+                Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
 
-            string user = Console.ReadLine();
+                Console.Write("\n Please choose an option: ");
+
+                string user = Console.ReadLine();
+            }
+
 
 
         }

@@ -25,11 +25,11 @@ namespace COMP003A.Assignment6
 
         public void DisplayMessage()
         {
-            Console.WriteLine($"Title:{Book}");
+            Console.WriteLine("Title: " + Book);
 
-            Console.WriteLine($"Available:{Page} ");
+            Console.WriteLine("Pages: " + Page);
 
-            Console.WriteLine($"Avaliable:{(Available ? "Yes" : "Mo")}");
+            Console.WriteLine("Availability: " + Available);
             if (!Available)
             {
                 Console.WriteLine("Unavailable");
