@@ -29,7 +29,15 @@ namespace COMP003A.Assignment6
 
             Console.WriteLine($"Available:{Page} ");
 
-            Console.WriteLine($"Avaliable:{Available}");
+            Console.WriteLine($"Avaliable:{(Available ? "Yes" : "Mo")}");
+            if (!Available)
+            {
+                Console.WriteLine("Unavailable");
+            }
+            else
+            {
+                Console.WriteLine("Available");
+            }
         }
     }
 }
