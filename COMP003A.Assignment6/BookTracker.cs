@@ -9,5 +9,12 @@ namespace COMP003A.Assignment6
         string Name;
 
         int File;
+
+        private BookTracker(string name, int file)
+        {
+            Name = name;
+
+            File = file;
+        }
     }
 }

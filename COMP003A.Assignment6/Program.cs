@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Library Menu.\n");
+
+            Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
+
+
         }
     }
 }
