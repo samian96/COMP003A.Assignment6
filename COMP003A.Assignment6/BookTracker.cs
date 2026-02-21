@@ -29,7 +29,7 @@ namespace COMP003A.Assignment6
 
             Console.Write("" + "Pages: " + Page + " / ");
 
-            Console.Write("" + "Instock: " + Instock + " / ");
+            Console.Write("" + "Instock: ");
             if (Instock)
             {
                 Console.Write("Available");
