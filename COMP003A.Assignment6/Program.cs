@@ -6,15 +6,20 @@
         {
             BookTracker book1 = new BookTracker("The Call of Cthulu", 39, false);
 
+            BookTracker book2 = new BookTracker("Dante's Inferno", 700, true);
+
+            BookTracker book3 = new BookTracker("Collection of Edgar Allen Poe", 928, true);
+
             bool running = true;
+
+            Console.WriteLine("Library Menu.\n");
+
+            Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
 
             while (running)
             {
-                Console.WriteLine("Library Menu.\n");
 
-                Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
-
-                Console.Write("\n Please choose an option: 1-3): ");
+                Console.Write("\n Please choose an option: ");
 
                 string user = Console.ReadLine();
 

@@ -10,7 +10,7 @@ namespace COMP003A.Assignment6
 
         public int Page;
 
-        public bool Available;
+        public bool Instock;
 
 
 
@@ -20,23 +20,23 @@ namespace COMP003A.Assignment6
 
             Page = page;
 
-            Available = available;
+            Instock = available;
         }
 
         public void DisplayMessage()
         {
-            Console.WriteLine("Title: " + Book);
+            Console.Write("" + "Title: " + Book + " / ");
 
-            Console.WriteLine("Pages: " + Page);
+            Console.Write("" + "Pages: " + Page + " / ");
 
-            Console.WriteLine("Availability: " + Available);
-            if (Available)
+            Console.Write("" + "Instock: " + Instock + " / ");
+            if (Instock)
             {
-                Console.WriteLine("Available");
+                Console.Write("Available");
             }
             else
             {
-                Console.WriteLine("Unavailable");
+                Console.Write("Unavailable");
             }
         }
 
