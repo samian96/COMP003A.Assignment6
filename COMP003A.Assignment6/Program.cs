@@ -1,4 +1,6 @@
-﻿namespace COMP003A.Assignment6
+﻿using System.Xml.Serialization;
+
+namespace COMP003A.Assignment6
 {
     internal class Program
     {
@@ -44,7 +46,26 @@
                         break;
 
                     case "2":
-                        Console.WriteLine("update: not implemented yet");
+                        Console.WriteLine("Which Item would you like to update?");
+
+                        string user2 = Console.ReadLine()?.Trim().ToLower();
+
+                        if (user == "1")
+                        {
+                            Console.WriteLine($"\n {book1.Book} is currently {(book1.Instock ? "Available" : "Unavailable")}");
+                            Console.Write("Update aivalability? yes/no");
+                            string user3 = Console.ReadLine()?.Trim().ToLower();
+                            if (user == "yes" || user == "y")
+                            {
+                                book1.Instock = true;
+                                Console.WriteLine("Availability Updated.");
+                            }
+                            else if (user == "no" || user == "n")
+                            {
+                                book1.Instock = false;
+                                Console.WriteLine("Availability updated");
+                            }
+                        }
 
                         break;
 
