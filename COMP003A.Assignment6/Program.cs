@@ -5,6 +5,12 @@ namespace COMP003A.Assignment6
     internal class Program
     {
         static void Main(string[] args)
+            /* The main program will be calling to the booktracker class for the resources to update the avialability of the book that is being checked out
+             * inside the main we are using a switch to run through the user inputed options
+             * if the user selects the second option, they will be asked to update the availability of the book, checking in or out. This is being handled by an if else if loop to adjust the bool that is inside of the booktracker
+             * switch 3 changes the bool running from true to false to end the program.
+             
+             */
         {
             BookTracker book1 = new BookTracker("The Call of Cthulu", 39, false);
 
@@ -17,6 +23,8 @@ namespace COMP003A.Assignment6
             Console.WriteLine("Library Menu.\n");
 
             Console.WriteLine("1. Display All:\n2. Update One Item:\n3. Exit: ");
+
+
 
             while (running)
             {
@@ -128,8 +136,7 @@ namespace COMP003A.Assignment6
                 }
             }
 
-
-
         }
+
     }
 }
