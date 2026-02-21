@@ -53,14 +53,14 @@ namespace COMP003A.Assignment6
                         if (user2 == "1")
                         {
                             Console.WriteLine($"\n {book1.Book} is currently {(book1.Instock ? "Available" : "Unavailable")}");
-                            Console.Write("Update aivalability? yes/no: ");
+                            Console.Write("Update aivalability? check in(1)/check-out(2): ");
                             string user3 = Console.ReadLine()?.Trim().ToLower();
-                            if (user3 == "yes" || user == "y")
+                            if (user3 == "1")
                             {
                                 book1.Instock = true;
                                 Console.WriteLine("Availability Updated.");
                             }
-                            else if (user == "no" || user == "n")
+                            else if (user3 == "2")
                             {
                                 book1.Instock = false;
                                 Console.WriteLine("Availability updated");
@@ -69,6 +69,47 @@ namespace COMP003A.Assignment6
                             {
                                 Console.WriteLine("Cancelled update.");
                             }
+                        } else if (user2 == "2")
+                        {
+                            Console.WriteLine($"\n {book2.Book} is currently {(book2.Instock ? "Available" : "Unavailable")}");
+                            Console.Write("Update aivalability? check in(1)/check-out(2): ");
+                            string user3 = Console.ReadLine()?.Trim().ToLower();
+                            if (user3 == "1")
+                            {
+                                book2.Instock = true;
+                                Console.WriteLine("Availability Updated.");
+                            }
+                            else if (user3 == "2")
+                            {
+                                book2.Instock = false;
+                                Console.WriteLine("Availability updated");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Cancelled update.");
+                            }
+                        } else if (user2 == "3")
+                        {
+                            Console.WriteLine($"\n {book3.Book} is currently {(book3.Instock ? "Available" : "Unavailable")}");
+                            Console.Write("Update aivalability? check in(1)/check-out(2): ");
+                            string user3 = Console.ReadLine()?.Trim().ToLower();
+                            if (user3 == "1")
+                            {
+                                book3.Instock = true;
+                                Console.WriteLine("Availability Updated.");
+                            }
+                            else if (user3 == "2")
+                            {
+                                book3.Instock = false;
+                                Console.WriteLine("Availability updated");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Cancelled update.");
+                            }
+                        } else
+                        {
+                            Console.WriteLine("invalid choice.");
                         }
                         
 
