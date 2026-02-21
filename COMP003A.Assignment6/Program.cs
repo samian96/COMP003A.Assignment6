@@ -50,12 +50,12 @@ namespace COMP003A.Assignment6
 
                         string user2 = Console.ReadLine()?.Trim().ToLower();
 
-                        if (user == "1")
+                        if (user2 == "1")
                         {
                             Console.WriteLine($"\n {book1.Book} is currently {(book1.Instock ? "Available" : "Unavailable")}");
-                            Console.Write("Update aivalability? yes/no");
+                            Console.Write("Update aivalability? yes/no: ");
                             string user3 = Console.ReadLine()?.Trim().ToLower();
-                            if (user == "yes" || user == "y")
+                            if (user3 == "yes" || user == "y")
                             {
                                 book1.Instock = true;
                                 Console.WriteLine("Availability Updated.");
@@ -65,7 +65,12 @@ namespace COMP003A.Assignment6
                                 book1.Instock = false;
                                 Console.WriteLine("Availability updated");
                             }
+                            else
+                            {
+                                Console.WriteLine("Cancelled update.");
+                            }
                         }
+                        
 
                         break;
 
