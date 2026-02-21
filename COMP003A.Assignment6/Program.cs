@@ -28,15 +28,33 @@
                     case "1":
 
                         Console.WriteLine("\nLibrary Availability:");
+
                         book1.DisplayMessage();
+
+                        Console.WriteLine("");
+
+                        book2.DisplayMessage();
+
+                        Console.WriteLine("");
+
+                        book3.DisplayMessage();
+
+                        Console.WriteLine("");
+
                         break;
+
                     case "2":
                         Console.WriteLine("update: not implemented yet");
+
                         break;
+
                     case "3":
                         Console.WriteLine("Goodbye.");
+
                         running = false;
+
                         break;
+
                     default:
                         Console.WriteLine("Invalid choice, please try again.");
                         break;
