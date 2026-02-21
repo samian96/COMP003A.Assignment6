@@ -14,7 +14,7 @@ namespace COMP003A.Assignment6
 
 
 
-        private BookTracker(string book, int page, bool available)
+        public BookTracker(string book, int page, bool available)
         {
             Book = book;
 
@@ -30,14 +30,15 @@ namespace COMP003A.Assignment6
             Console.WriteLine("Pages: " + Page);
 
             Console.WriteLine("Availability: " + Available);
-            if (!Available)
-            {
-                Console.WriteLine("Unavailable");
-            }
-            else
+            if (Available)
             {
                 Console.WriteLine("Available");
             }
+            else
+            {
+                Console.WriteLine("Unavailable");
+            }
         }
+
     }
 }
